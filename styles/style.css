@@ -2,6 +2,12 @@
 
 /* GENERAL STYLING */
 
+    /* html style */
+html {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
     /* text styling */
 .left-align {
     width: 366px;
@@ -9,6 +15,13 @@
     text-align: left;
 }
 
+.size13 {
+    font-size: 0.8125rem;
+}
+
+.size16 {
+    font-size: 1 rem;
+}
     /* general flex*/
 .flex-col {
     display: flex;
@@ -47,8 +60,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    justify-content: center;
-    margin: 0 auto;
+    gap: 3rem;
+    
 }
 
 
@@ -66,13 +79,13 @@
 }
 
 .crop-img {
-    width: 365.5px ;
+    min-width: 365.5px ;
     height: 365.5px ;
     object-fit: cover;
 }
 
 .banner-img {
-    width: 365.5px ;
+    min-width: 365.5px ;
     height: 365.5px ;
     object-fit: scale-down;
 }
@@ -81,7 +94,7 @@
 
     /* image sizing */
 .classimage {
-    width: 364px;
+    min-width: 364px;
     height: 225px;
     object-fit: cover;
 }

@@ -15,15 +15,25 @@ html {
     text-align: left;
 }
 
-
-
-.size13 {
-    font-size: 0.8125rem;
+h1 {
+    font-weight: normal;
+    font-size: 2rem;
+    color: #413939;
 }
 
-.size16 {
+h2, h3 {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+p {
     font-size: 1 rem;
 }
+
+a {
+    text-decoration: none;
+}
+
     /* general flex*/
 .flex-col {
     display: flex;
@@ -40,12 +50,27 @@ html {
 
 
 /* Header Styling */
+.nav-link {
+    margin-bottom: 4rem;
+}
 
+.navbtn {
+    font-size: 0.75rem;
+    border: 1px solid #413939;
+    border-radius: 12px;
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin: 0.5rem;
+    
+}
     /* image size */
 .logo {
     display: block;
     width: 188px;
     margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
     /* center align */
@@ -53,7 +78,6 @@ html {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: rem;
 }
 
 
@@ -67,7 +91,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 3rem;
+    gap: 4rem;
     
 }
 
@@ -101,6 +125,8 @@ html {
     border-bottom: 1px solid #98002E;
     width: 365.5px;
     margin: 0 auto;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 /* Section 2: About Us */
@@ -116,15 +142,48 @@ html {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    gap: 3rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.btn {
+    background-color: #98002E;
+    border-radius: 20px;
+    padding: 0.8rem;
+    margin-bottom: 3rem;
+    max-width: 364px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight:lighter;
 }
 
 
 /* Footer */
+
+.footer {
+    background-color: #98002E;
+    padding: 1.5rem;
+    position: relative;
+    height: 70px;
+}
+
 .footerlogo {
     width: 188.23px;
     height: 31.02px;
     margin: 0 auto;
 }
+
+small {
+    font-weight: lighter;
+    color: white;
+    font-size: 0.875rem;
+}
+
 
 
 

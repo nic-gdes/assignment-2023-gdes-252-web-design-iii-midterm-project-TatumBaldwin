@@ -23,9 +23,17 @@
 /* MORE SPECIFIC STYLING START HERE */
 
 /* Header Styling */
+
+    /* image size */
 .logo {
     display: block;
     width: 188px;
+    margin: 0 auto;
+}
+
+    /* center align */
+.header {
+    text-align: center;
 }
 
 
@@ -79,6 +87,7 @@
 /* Footer */
 .footerlogo {
     width: 188.23px;
+    height: 31.02px;
 }
 
 

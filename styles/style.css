@@ -9,7 +9,6 @@
     text-align: left;
 }
 
-
     /* general flex*/
 .flex-col {
     display: flex;
@@ -19,8 +18,9 @@
 }
 
 
-
 /* MORE SPECIFIC STYLING START HERE */
+
+
 
 /* Header Styling */
 
@@ -45,6 +45,8 @@
     /* grid */
 .articles {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-content: center;
     margin: 0 auto;
 }
@@ -83,6 +85,13 @@
     height: 225px;
     object-fit: cover;
 }
+
+.aboutus {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 
 /* Footer */
 .footerlogo {

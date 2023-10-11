@@ -1,0 +1,95 @@
+
+
+/* GENERAL STYLING */
+
+    /* text styling */
+.left-align {
+    width: 366px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+    /* general flex*/
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    
+}
+
+
+
+/* MORE SPECIFIC STYLING START HERE */
+
+/* Header Styling */
+.logo {
+    display: block;
+    width: 188px;
+}
+
+
+
+
+
+/* Section 1: Article Cards */
+
+    /* grid */
+.articles {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+    /* image sizing */
+.img-containers {
+    margin: 0 auto;
+}
+
+.article-images {
+    display: block;
+    float: left;
+    width:  365.5px;
+    height: 365.5px;
+    object-fit: cover;
+}
+
+.crop-img {
+    width: 365.5px ;
+    height: 365.5px ;
+    object-fit: cover;
+}
+
+.banner-img {
+    width: 365.5px ;
+    height: 365.5px ;
+    object-fit: scale-down;
+}
+
+/* Section 2: About Us */
+
+    /* image sizing */
+.classimage {
+    width: 364px;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footerlogo {
+    width: 188.23px;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1320px)  {
+    .hide {
+        display: none;
+    }
+}
+

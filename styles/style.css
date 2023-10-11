@@ -8,6 +8,10 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+body {
+    background-color: #F7F1ED;
+}
+
     /* text styling */
 .left-align {
     width: 366px;
@@ -24,10 +28,12 @@ h1 {
 h2, h3 {
     font-weight: bold;
     font-size: 1.125rem;
+    color: #413939;
 }
 
 p {
     font-size: 1 rem;
+    color: #413939;
 }
 
 a {
@@ -50,20 +56,29 @@ a {
 
 
 /* Header Styling */
-.nav-link {
+
+    /* navigation buttons */
+.nav-links {
     margin-bottom: 4rem;
 }
 
 .navbtn {
     font-size: 0.75rem;
+    color: #413939;
     border: 1px solid #413939;
     border-radius: 12px;
     padding: 0.3rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     margin: 0.5rem;
-    
 }
+
+.specialbtn {
+    color: #FFFFFF;
+    background-color: #98002E;
+    border: none;
+}
+
     /* image size */
 .logo {
     display: block;
@@ -121,12 +136,17 @@ a {
     object-fit: scale-down;
 }
 
+    /* border bottom */
 .border-bottom {
     border-bottom: 1px solid #98002E;
     width: 365.5px;
     margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     padding-bottom: 4rem;
+}
+
+.margin-bottom {
+    margin-bottom: 6rem;
 }
 
 /* Section 2: About Us */
@@ -138,11 +158,14 @@ a {
     object-fit: cover;
 }
 
+    /* flex */
 .aboutus {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 5rem;
     gap: 3rem;
+    background-color: #F4E2D6;
 }
 
 .info {
@@ -151,6 +174,12 @@ a {
     gap: 1.5rem;
 }
 
+    /* color paragraph */
+.special-p {
+    color: #98002E;
+}
+
+    /* button */
 .btn {
     background-color: #98002E;
     border-radius: 20px;
@@ -172,12 +201,14 @@ a {
     height: 70px;
 }
 
+    /* img size */
 .footerlogo {
     width: 188.23px;
     height: 31.02px;
     margin: 0 auto;
 }
 
+    /* disclaimer */
 small {
     font-weight: lighter;
     color: white;
@@ -191,6 +222,8 @@ small {
 
 
 /* Media Queries */
+
+    /* hide mac icon */
 @media screen and (max-width: 1320px)  {
     .hide {
         display: none;

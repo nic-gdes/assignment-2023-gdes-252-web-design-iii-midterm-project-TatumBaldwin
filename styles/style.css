@@ -15,6 +15,8 @@ html {
     text-align: left;
 }
 
+
+
 .size13 {
     font-size: 0.8125rem;
 }
@@ -27,8 +29,10 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap:nowrap;
-    
+    gap: 1rem;
 }
+
+
 
 
 /* MORE SPECIFIC STYLING START HERE */
@@ -46,7 +50,10 @@ html {
 
     /* center align */
 .header {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    gap: rem;
 }
 
 
@@ -88,6 +95,12 @@ html {
     min-width: 365.5px ;
     height: 365.5px ;
     object-fit: scale-down;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #98002E;
+    width: 365.5px;
+    margin: 0 auto;
 }
 
 /* Section 2: About Us */

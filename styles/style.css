@@ -299,8 +299,6 @@ small {
     }
 
     /* image sizing + grid */
-
-
     .flex-col {
         width: 424px;
     }
@@ -330,12 +328,13 @@ small {
         width: 100%;
     }
 
+    .imageless {
+        width: 271px;
+    }
+    
     /* get rid of border */
     .border-bottom {
         border: none;
     }
 
-    .imageless {
-        width: 271px;
-    }
 }

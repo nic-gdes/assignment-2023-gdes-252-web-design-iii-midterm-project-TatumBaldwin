@@ -286,4 +286,15 @@ small {
         height: 66.67px;
     }
 
+    /* grid layout */
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.5fr;
+        grid-template-rows: auto;
+        gap: 4rem;
+        
+    }
+
+    
+
 }

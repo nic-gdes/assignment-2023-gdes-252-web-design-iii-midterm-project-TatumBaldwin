@@ -35,7 +35,7 @@ h2, h3 {
 }
 
 p {
-    font-size: 1 rem;
+    font-size: 1rem;
     color: #413939;
     line-height: 1.5rem;
 }
@@ -170,6 +170,7 @@ a {
 .aboutus {
     display: flex;
     justify-content: center;
+    position: relative;
     margin: 0 auto;
     width: 100%;
     padding-top: 5rem;
@@ -207,8 +208,6 @@ a {
     position:relative;
     min-width: 100%;
     height: 150px;
-
-
 }
 
     /* img size */
@@ -244,10 +243,17 @@ small {
     /* Layout for screen size of 1320px */
 @media screen and (min-width: 1320px)  {
 
+    /* font sizes and styles */
+    h1 {
+        font-size: 3rem;
+    }
     
-    .all-content {
-        width: 90vw;
-        margin: 0 auto;
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     /* header edits */
@@ -261,7 +267,9 @@ small {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 5rem;
+        width: 90vw;
+        padding: 3.5rem;
+        margin: 0 auto;
     }
 
     .just-left {
@@ -274,6 +282,8 @@ small {
 
     .logo {
         margin: 0px;
+        width: 400px;
+        height: 66.67px;
     }
 
 }

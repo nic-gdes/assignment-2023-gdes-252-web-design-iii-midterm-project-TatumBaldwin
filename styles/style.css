@@ -145,15 +145,12 @@ a {
     /* border bottom */
 .border-bottom {
     border-bottom: 1px solid #98002E;
-    width: 365.5px;
     margin: 0 auto;
     margin-bottom: 1rem;
     padding-bottom: 4rem;
 }
 
-.imageless {
-    margin-bottom: 6rem;
-}
+
 
 
 /* Section 2: About Us */
@@ -170,10 +167,10 @@ a {
 .aboutus {
     display: flex;
     justify-content: center;
-    position: relative;
     margin: 0 auto;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    margin-top: 7rem;
     gap: 3rem;
     background-color: #F4E2D6;
 }
@@ -232,6 +229,7 @@ small {
 
 
 /* Media Queries */
+/* ---------------------------------------- */
 
     /* hide mac icon */
 @media screen and (max-width: 1319px)  {
@@ -239,6 +237,8 @@ small {
         display: none;
     }
 }
+
+
 
     /* Layout for screen size of 1320px */
 @media screen and (min-width: 1320px)  {
@@ -256,6 +256,11 @@ small {
         font-size: 1.5rem;
     }
 
+    .left-align {
+        width: 750px;
+        margin: 0;
+    }
+
     /* header edits */
     .hide {
         width: 350px;
@@ -263,12 +268,13 @@ small {
         justify-items: end;
     }
 
-    .flex-row {
+    .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 90vw;
         padding: 3.5rem;
+        padding-top: 8rem;
         margin: 0 auto;
     }
 
@@ -286,7 +292,7 @@ small {
         height: 66.67px;
     }
 
-    /* grid layout */
+    /* grid layout section 1 */
     .articles {
         display: grid;
         justify-items: center;
@@ -294,47 +300,115 @@ small {
         grid-template-columns: 1fr 1fr 0.5fr;
         grid-template-rows: auto;
         margin: 0 auto;
-        gap: 0;
+        gap: 1.5rem;
         
     }
 
     /* image sizing + grid */
-    .flex-col {
-        width: 424px;
-    }
-
+ 
     .article-images {
         width: 424px;
     }
 
+            /* microchip section */
+
+    .chiptext, .marstext {
+        width: 424px;
+    }
+            /* pizza seciton */
     .pizza {
         min-width: 727px;
         grid-column-start: 2;
         grid-column-end: 4;
         justify-self: flex-end;
-        margin-bottom: 3rem
+        padding-bottom: 2rem;
+    }
+
+    .pizzatext {
+        width: 727px;
     }
 
     .crop-img {
         width: 727px;
         height: 635px;
     }
+         
 
-    .banner-img {
-        width: 424px;
-    }
-
-    .left-align {
-        width: 100%;
-    }
-
+            /* imageless section */
+ 
     .imageless {
-        width: 271px;
+        max-width: 271px;
     }
-    
+   
+
+            /* coffee section */
+    .banner-img {
+        max-width: 424px;
+        object-fit: none;
+    }
+
+     .bannertext {
+        width: 424px;
+        margin: 0 auto;
+    }
+
     /* get rid of border */
     .border-bottom {
         border: none;
+    }
+
+
+    /* section 2 */
+    
+    .flex-col {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .classimage {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 1920px) {
+
+    /* header edits */
+    .hide {
+        width: 450px;
+    }
+
+    .logo {
+        width: 600px;
+        height: auto;
+    }
+
+    .header {
+        max-width: 1522px;
+    }
+
+    /* image sizes */
+
+    .article-images {
+        width: 326px;
+        height: auto;
+    }
+
+    .chiptext, .imageless {
+        width: 326px;
+    }
+
+    .pizza, .pizzatext, .marstext, .marsimg {
+        width: 505px;
+        margin: 0 auto;
+    }
+
+  
+
+    .crop-img {
+        width: 505px;
     }
 
 }

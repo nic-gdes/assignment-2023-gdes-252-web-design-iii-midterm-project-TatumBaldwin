@@ -137,7 +137,7 @@ a {
 }
 
 .banner-img {
-    min-width: 365.5px ;
+    width: 365.5px ;
     height: 365.5px ;
     object-fit: scale-down;
 }
@@ -294,9 +294,8 @@ small {
 
     /* grid layout section 1 */
     .articles {
-        display: grid;
         justify-items: center;
-        max-width: 90vw;
+        width: 90vw;
         grid-template-columns: 1fr 1fr 0.5fr;
         grid-template-rows: auto;
         margin: 0 auto;
@@ -317,7 +316,7 @@ small {
     }
             /* pizza seciton */
     .pizza {
-        min-width: 727px;
+        width: 727px;
         grid-column-start: 2;
         grid-column-end: 4;
         justify-self: flex-end;
@@ -337,7 +336,7 @@ small {
             /* imageless section */
  
     .imageless {
-        max-width: 271px;
+        width: 271px;
     }
    
 
@@ -396,19 +395,83 @@ small {
         height: auto;
     }
 
+        /* microchip img and imgless */
     .chiptext, .imageless {
         width: 326px;
     }
 
+        /* pizza and mars img */
     .pizza, .pizzatext, .marstext, .marsimg {
         width: 505px;
         margin: 0 auto;
     }
 
-  
+        /* coffe img */
+    .banner-img {
+        max-width: 326px;
+        max-height: 326px;
+        object-fit: fill;
+    }
+
+    .bannertext {
+        color: #F7F1ED;
+        padding: 1rem;
+        width: 652px;
+    }
+
+    .border-bottom {
+        padding: 0px;
+    }
+
+    .flex-change {
+        flex-direction: row;
+        background-color: #98002E;
+        height: auto;
+        min-width: 1042px;
+        max-height: 326px;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .crop-img {
         width: 505px;
+    }
+
+    /* grid layout */
+
+    .articles {
+        grid-template-columns: 1fr 2fr 2fr;
+        justify-content: space-between;
+        max-width: 1400px;
+    }
+
+    .img-containers, .left-align {
+        margin: 0px;
+    }
+    .chip {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .pizza {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .mars {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        padding-bottom: 2rem;
+    }
+
+    .banner {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .imageless-container {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 
 }
